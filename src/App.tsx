@@ -5,6 +5,8 @@ import Container from '@mui/material/Container';
 
 import { FilmView } from "./components/FilmView/FilmView";
 
+import Footer from "./components/Footer/Footer";
+
 // data
 const api_url = "https://api.themoviedb.org/3/movie/popular?api_key=0b2953095c6d796f8e06da225aa4dca6&language=en-US&page=2";
 
@@ -64,6 +66,8 @@ function App() {
         {/* <FilmView data={mediaCards}/> */}
         {/* <FilmView data={api_url}/> */}
         <FilmView />
+
+        <Footer />
       </Container>
     </ThemeProvider>
   );
