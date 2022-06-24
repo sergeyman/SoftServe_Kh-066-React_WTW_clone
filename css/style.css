@@ -1,0 +1,56 @@
+:export {
+  primaryMain: #5fafbe;
+  primaryLight: #92e1f1;
+  primaryDark: #297f8e;
+  secondaryMain: #f8d8cc;
+  secondaryLight: #ffffff;
+  secondaryDark: #c5a79b;
+}
+
+.header {
+  background-color: #297f8e;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  padding: 0 20px;
+}
+
+.menu-item {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.login-link {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}/*# sourceMappingURL=style.css.map */

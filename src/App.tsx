@@ -5,6 +5,10 @@ import Container from '@mui/material/Container';
 
 import { FilmView } from "./components/FilmView/FilmView";
 
+import { Header } from "./components/Header/Header";
+import { Router } from "./components/Router/Router";
+import { BrowserRouter } from "react-router-dom";
+
 // data
 const api_url = "https://api.themoviedb.org/3/movie/popular?api_key=0b2953095c6d796f8e06da225aa4dca6&language=en-US&page=2";
 
@@ -58,13 +62,19 @@ const api_url = "https://api.themoviedb.org/3/movie/popular?api_key=0b2953095c6d
 function App() {
   return (
     <ThemeProvider theme={customTheme}>
-      {/* <h1> What to Watch clone </h1> */}
-      <Container maxWidth="lg">     {/*Grows witht the size of the screen: sm, md, lg, xl, false, string */}
-        
-        {/* <FilmView data={mediaCards}/> */}
-        {/* <FilmView data={api_url}/> */}
-        <FilmView />
-      </Container>
+      
+      <BrowserRouter>
+        <Header />
+        {/* <h1> What to Watch clone </h1> */}
+        <Container maxWidth="lg">     {/*Grows witht the size of the screen: sm, md, lg, xl, false, string */}
+          
+          {/* <FilmView data={mediaCards}/> */}
+          {/* <FilmView data={api_url}/> */}
+          <FilmView />
+
+          <Router />        
+        </Container>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
